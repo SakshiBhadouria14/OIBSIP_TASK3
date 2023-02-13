@@ -1,0 +1,47 @@
+<!-- TEMPERATURE CONVERTER -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Temperature Converter</title>
+
+   <link rel="icon" href="https://cdn3.iconfinder.com/data/icons/complete-set-icons/512/tumblr512x512.png">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hm">
+        <img src="image/123.png" height="120px" width="230px">
+    </div>
+    <marquee  scrollamaount="2">
+        <p style="font-family: cursive;text-align: center;color: lightblue;">This webpage allows you to convert temperature from <u>CELSIUS TO FAHRENHEIT</u> and vice versa.</p><br>
+        
+    </marquee>
+    <h1 class="lines"> SO! Welcome Folks &#128400 </h1><br>
+    
+    <div class="bigbox">
+        <div class="container">
+           <form id="tempCalc" onsubmit="calculateTemp(); return false">
+        <label for="temp">Enter the Temperature here</label>
+        <br/>
+        <input type="number" name="temp" id="temp" >
+        <select name="temp_diff" id="temp_diff">
+            <option value="cel">°Celsius</option>
+            <option value="fah">°Fahrenheit</option>
+        </select> <br/>
+        <input type="submit" name="temp" value="Convert"> <br/> <br/>
+        <span id="resultContainer"></span>
+    </form>
+        </div>
+    </div>
+    <h1 class="end">Task-3 by SAKSHI BHADOURIA</h1>
+    <script src="script.js"></script>
+</body>
+</html>
